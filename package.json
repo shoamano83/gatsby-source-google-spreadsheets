@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "prepack": "yarn format && yarn test && cross-env NODE_ENV=production yarn build",
+    "prepare": "npm run build",
     "format": "prettier ./src/** --write && destiny ",
     "test": "jest"
   },
